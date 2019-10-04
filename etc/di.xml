@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Payment\Model\MethodList">
+        <plugin name="methodlist" type="Treestonemedia\PurchaseOrder\Plugin\Payment\Available" sortOrder="1" />
+    </type>
+    <preference for="Treestonemedia\PurchaseOrder\Api\Requests\PurchaseOrderInterface" type="Treestonemedia\PurchaseOrder\Model\ApiRequest\PurchaseOrder"/>
+</config>
